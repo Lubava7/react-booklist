@@ -24,14 +24,20 @@ function App({ author, title }) {
 
   return (
     <div className="app-js-booklist">
-      <Booklist addBook={addBook} />
+      <div className="header">
+        <h3>Booklist App</h3>
+        <label>Add and view your books in this list</label>
+      </div>
+      <div className="comp-n-output">
+        <Booklist addBook={addBook} />
 
-      <div className="output-main-div">
-        <div className="output-head">
-          <div className="div-1">My Books</div>
+        <div className="output-main-div">
+          <div className="output-head">
+            <div className="div-1">My Books</div>
+          </div>
+          <hr></hr>
+          <div className="under-head"></div>
         </div>
-        <hr></hr>
-        <div className="under-head"></div>
       </div>
     </div>
   );

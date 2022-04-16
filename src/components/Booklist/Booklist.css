@@ -1,16 +1,9 @@
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.booklist {
+  width: 49%;
 }
-
-/* .booklist {
-  width: 100%;
-} */
 .input-fields {
   background-image: linear-gradient(to left, violet, red);
   font-size: 20px;
-  width: 100%;
   padding: 20px;
   border-radius: 20px;
   margin-left: 5%;

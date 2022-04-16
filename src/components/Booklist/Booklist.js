@@ -24,11 +24,7 @@ function Booklist({ addBook }) {
   }
 
   return (
-    <div classame="booklist">
-      <div className="header">
-        <h3>Booklist App</h3>
-        <label>Add and view your books in this list</label>
-      </div>
+    <div className="booklist">
       <div className="input-fields">
         <div className="book-title">
           <p>Book Title</p>
