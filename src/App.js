@@ -1,26 +1,37 @@
 import React from "react";
 import "./App.css";
+import Booklist from "./components/Booklist/Booklist";
+function App({ author, title }) {
+  const [books, setBooks] = React.useState([]);
+  const [count, setCount] = React.useState(0);
 
-function App() {
+  React.useEffect(() => {
+    document.title = `${count} books`;
+  }, [count]);
+
+  function addBook(author, title) {
+    if (author && title) {
+      const newItem = {
+        id: Math.floor().toString(36).substring(2, 9),
+        author: author,
+        title: title,
+      };
+      setBooks([...books, newItem]);
+      setCount(books.length + 1);
+      console.log(books, newItem);
+    }
+  }
+
   return (
-    <div classame="booklist">
-      <div className="header">
-        <h3>Booklist App</h3>
-        <label>Add and view your books in this list</label>
-      </div>
+    <div className="app-js-booklist">
+      <Booklist addBook={addBook} />
 
-      <div className="input-fields">
-        <div className="book-title">
-          <p>Book Title</p>
-          <input className="input" placeholder="write the book title" />
+      <div className="output-main-div">
+        <div className="output-head">
+          <div className="div-1">My Books</div>
         </div>
-        <div className="author-input">
-          <p>Author</p>
-          <input className="input" placeholder="write the book author" />
-        </div>
-        <div className="button-book">
-          <button className="btn">Add a New Book</button>
-        </div>
+        <hr></hr>
+        <div className="under-head"></div>
       </div>
     </div>
   );
