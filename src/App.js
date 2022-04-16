@@ -12,7 +12,7 @@ function App({ author, title }) {
   function addBook(author, title) {
     if (author && title) {
       const newItem = {
-        id: Math.floor().toString(36).substring(2, 9),
+        id: Math.random().toString(36).substring(2, 9),
         author: author,
         title: title,
       };

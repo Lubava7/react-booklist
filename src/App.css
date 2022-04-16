@@ -31,6 +31,7 @@ hr {
   padding: 20px;
   border-radius: 20px;
   margin-left: 5%;
+  margin-right: 5%;
   margin-top: 70px;
   background-image: linear-gradient(rgb(226, 25, 226), rgb(68, 211, 255));
 }
