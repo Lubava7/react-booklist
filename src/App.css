@@ -1,0 +1,77 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    to left,
+    rgb(113, 215, 255),
+    rgb(255, 47, 47)
+  );
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid rgb(255, 0, 230); */
+}
+.input-fields {
+  /* border: 2px solid rgb(181, 0, 226); */
+  background-image: linear-gradient(to left, violet, red);
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: 5%;
+  margin-top: 5%;
+  font-size: 20px;
+  height: 400px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+.book-title {
+  font-size: 20px;
+  /* border: 2px solid black; */
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.author-input {
+  font-size: 20px;
+  /* border: 2px solid black; */
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.button-book {
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  background-image: linear-gradient(
+    to left,
+    rgb(255, 12, 150),
+    rgb(255, 153, 0)
+  );
+
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  width: 150px;
+}
+/* .btn:hover {
+  background-image: linear-gradient(
+    to left,
+    rgb(255, 12, 150),
+    rgb(255, 153, 0)
+  );
+} */
+.input {
+  height: 40px;
+  font-size: 20px;
+  outline: none;
+  border-radius: 15px;
+  padding-left: 20px;
+}
