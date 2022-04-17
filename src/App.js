@@ -63,7 +63,10 @@ function App() {
                     <div key={book.id} className="map-output">
                       {book.author} , "{book.title}"
                       <div>
-                        <MdDeleteOutline onClick={() => deleteBook(book.id)} />
+                        <MdDeleteOutline
+                          onClick={() => deleteBook(book.id)}
+                          color={"crimson"}
+                        />
                       </div>
                     </div>
                   );
