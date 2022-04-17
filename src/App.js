@@ -1,13 +1,28 @@
 import React from "react";
 import "./App.css";
 import Booklist from "./components/Booklist/Booklist";
-function App({ author, title }) {
-  const [books, setBooks] = React.useState([]);
-  const [count, setCount] = React.useState(0);
+import { MdDeleteOutline } from "react-icons/md";
+
+const getDataFromLS = () => {
+  const data = localStorage.getItem("books");
+  if (data) {
+    return JSON.parse(data);
+  } else {
+    return [];
+  }
+};
+
+function App() {
+  // const [books, setBooks] = React.useState([]);
+  const [books, setBooks] = React.useState(getDataFromLS());
+  const [count, setCount] = React.useState(books.length);
 
   React.useEffect(() => {
     document.title = `${count} books`;
   }, [count]);
+  React.useEffect(() => {
+    localStorage.setItem("books", JSON.stringify(books));
+  }, [books]);
 
   function addBook(author, title) {
     if (author && title) {
@@ -20,6 +35,10 @@ function App({ author, title }) {
       setCount(books.length + 1);
       console.log(books, newItem);
     }
+  }
+  function deleteBook(id) {
+    setBooks([...books.filter((book) => book.id !== id)]);
+    setCount(books.length - 1);
   }
 
   return (
@@ -36,7 +55,20 @@ function App({ author, title }) {
             <div className="div-1">My Books</div>
           </div>
           <hr></hr>
-          <div className="under-head"></div>
+          <div className="under-head">
+            {books.length === 0
+              ? "No books yet"
+              : books.map((book) => {
+                  return (
+                    <div key={book.id} className="map-output">
+                      {book.author} , "{book.title}"
+                      <div>
+                        <MdDeleteOutline onClick={() => deleteBook(book.id)} />
+                      </div>
+                    </div>
+                  );
+                })}
+          </div>
         </div>
       </div>
     </div>

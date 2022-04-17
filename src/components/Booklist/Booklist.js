@@ -48,7 +48,7 @@ function Booklist({ addBook }) {
           />
         </div>
         <div className="button-book">
-          <button className="btn" onClick={addBook}>
+          <button className="btn" onClick={handleSubmit}>
             Add a New Book
           </button>
         </div>

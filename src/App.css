@@ -50,7 +50,7 @@ hr {
 .under-head {
   /* border: 2px solid black; */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .app-js-booklist {
   display: flex;
@@ -59,4 +59,9 @@ hr {
 }
 .comp-n-output {
   display: flex;
+}
+.map-output {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
 }
