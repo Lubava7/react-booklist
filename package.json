@@ -1,7 +1,7 @@
 {
   "name": "react-booklist",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://lubava7.github.io/react-booklist/",
   "dependencies": {
     "@emotion/react": "^11.9.0",
