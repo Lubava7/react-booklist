@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-booklist/static/css/main.666edf1b.css",
+    "main.js": "/react-booklist/static/js/main.31469e49.js",
+    "static/js/787.e09ac9f1.chunk.js": "/react-booklist/static/js/787.e09ac9f1.chunk.js",
+    "index.html": "/react-booklist/index.html",
+    "main.666edf1b.css.map": "/react-booklist/static/css/main.666edf1b.css.map",
+    "main.31469e49.js.map": "/react-booklist/static/js/main.31469e49.js.map",
+    "787.e09ac9f1.chunk.js.map": "/react-booklist/static/js/787.e09ac9f1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.666edf1b.css",
+    "static/js/main.31469e49.js"
+  ]
+}
